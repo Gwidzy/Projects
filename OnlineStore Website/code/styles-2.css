@@ -1,0 +1,36 @@
+.img-fluid {
+  /*left:0%;*/
+}
+
+.navbar.navbar-light.navbar-expand-md.navigation-clean {
+  height:80px;
+  outline-style:solid;
+  outline-width:2px;
+  background-color:white;
+}
+
+.logo {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  height:80px;
+  width:100px;
+}
+
+.description {
+  margin-top:0;
+  color:white;
+  font-size:larger;
+  margin-bottom:5px;
+}
+
+.text-input {
+  width:66%;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  background-color:rgba(139,35,135,0.91);
+  margin-top:10px;
+  border-color:black;
+}
+
