@@ -1,4 +1,3 @@
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -10,12 +9,12 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
     }
-
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+
     private void initComponents() {
 
+        // declaring the GUI variables for the login page
         userNameText = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -50,12 +49,12 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(519, 284, 150, 29);
 
-        userPasswordText.setName("tFieldPass"); //
+        userPasswordText.setName("tFieldPass");
         getContentPane().add(userPasswordText);
         userPasswordText.setBounds(519, 319, 150, 22);
 
         logIn.setBackground(new java.awt.Color(255, 255, 255));
-        logIn.setFont(new java.awt.Font("Arial", 0, 24)); //
+        logIn.setFont(new java.awt.Font("Arial", 0, 24));
         logIn.setText("Login");
         logIn.setName("btnLogin");
         logIn.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -63,11 +62,13 @@ public class Login extends javax.swing.JFrame {
                 logInMouseClicked(evt);
             }
         });
+
         logIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logInActionPerformed(evt);
             }
         });
+
         getContentPane().add(logIn);
         logIn.setBounds(541, 357, 100, 45);
 
@@ -95,16 +96,12 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(180, 80, 830, 15);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Installation of back up genators at Watershed in Waterfront 5.png")));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Installation of back up generators at Watershed in Waterfront 5.png")));
         jLabel5.setText("jLabel5");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(0, 0, 1200, 720);
 
         pack();
-    }
-
-    private void logInMouseClicked(java.awt.event.MouseEvent evt) {
-        
     }
 
     private void logInActionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,8 +122,7 @@ public class Login extends javax.swing.JFrame {
                 userID = rs.getInt("loginID");
                 String userName = rs.getString("userName");
                 String userPass = rs.getString("pass");
-                
-                
+
                 if (username.equals(userName) && userpassword.equals(userPass)) {
                     b = true;
                     break;
