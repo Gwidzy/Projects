@@ -24,11 +24,8 @@ vatRegNo VARCHAR(20)
 CREATE TABLE Project(
 projID INT PRIMARY KEY auto_increment,
 projName VARCHAR(40),
--- projDesc VARCHAR(255),
 projStartDate DATE,
 projEndDate DATE,
--- projProofPay TINYINT,
--- projLocation VARCHAR(100),
 clientName VARCHAR(40),
 clientContact VARCHAR(40),
 vatRegNo VARCHAR(20),
@@ -50,6 +47,7 @@ clientConNum VARCHAR(12),
 clientEmail VARCHAR(45),
 empID VARCHAR(40)    
 );
+
 CREATE TABLE BackUpDeletedItemsEmployee(
 BackUpDeletedItemsEmployeeID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 empID VARCHAR(40),
@@ -66,6 +64,7 @@ userName VARCHAR(50),
 pass VARCHAR(50)
 );
 
+-- Test data used to insert employees, projects, clients and a user login
 
 INSERT INTO Employee(empID,empRole,empName,empSurN,empConNum,empEmail)
 VALUES  (1, "Admin", "Martin","Oliphant", "0794000966", "martin@test.com"),
@@ -89,9 +88,8 @@ SELECT Employee.empID, projName FROM Employee
 JOIN Project ON Employee.empID = Project.empID 
 WHERE Employee.empID = 1;
 
-
 UPDATE Project 
 SET projName =  "Test", projStartDate = "2021-07-08", projEndDate = "2021-07-09", clientName = "test",clientContact="test", clientEmail="test@test.com", empID =1
 WHERE projID = 1;
 
- SELECT * FROM Project
+SELECT * FROM Project
