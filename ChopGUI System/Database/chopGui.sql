@@ -92,4 +92,4 @@ UPDATE Project
 SET projName =  "Test", projStartDate = "2021-07-08", projEndDate = "2021-07-09", clientName = "test",clientContact="test", clientEmail="test@test.com", empID =1
 WHERE projID = 1;
 
-SELECT * FROM Project
+SELECT * FROM Project;
