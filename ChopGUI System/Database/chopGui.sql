@@ -76,7 +76,7 @@ INSERT INTO Clients(clientID,clientName,clientContact,clientConNum,vatRegNo,clie
 VALUES (456, "Sundown Stadium", "Piet","0714549826", "123456", "client@gmail.com");
 
 INSERT INTO Login(loginID,userName,pass)
-VALUES (069, "admin", "123");
+VALUES (069, "admin", "ad123");
 
 SELECT Employee.empID, projName FROM Employee 
 JOIN Project ON Employee.empID = Project.empID 
