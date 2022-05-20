@@ -65,8 +65,8 @@ pass VARCHAR(50)
 
 
 INSERT INTO Employee(empID,empRole,empName,empSurN,empConNum,empEmail)
-VALUES  (1, "Admin", "Martin","Oliphant", "0794000966", "martin@test.com"),
-		(2, "Worker", "Test","Testing", "1234567890", "admin@test.com");
+VALUES  (1, "Admin", "Martin","Oliphant", "0112152033", "admin@test.com"),
+		(2, "Employee", "EmpName","EmpSur", "0813032124", "employee@test.com");
 
 INSERT INTO Project(projName,projStartDate,projEndDate,clientName,clientContact,vatRegNo,clientConNum,clientEmail,empID)
 VALUES 	( "Sundowns Stadium Restoration","2021/07/18", "2021/08/15","Sundown Stadium","Piet","123456","0714549826","client@gmail.com",001),
