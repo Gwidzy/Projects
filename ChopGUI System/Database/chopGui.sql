@@ -24,11 +24,8 @@ vatRegNo VARCHAR(20)
 CREATE TABLE Project(
 projID INT PRIMARY KEY auto_increment,
 projName VARCHAR(40),
--- projDesc VARCHAR(255),
 projStartDate DATE,
 projEndDate DATE,
--- projProofPay TINYINT,
--- projLocation VARCHAR(100),
 clientName VARCHAR(40),
 clientContact VARCHAR(40),
 vatRegNo VARCHAR(20),
